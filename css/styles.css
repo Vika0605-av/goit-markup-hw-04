@@ -72,6 +72,7 @@ color:#4d5ae5
 }
 .nav-link.current {
 position: relative;
+color: #404bbf;
 }
 .nav-link.current::after {
     content: "";
@@ -172,7 +173,8 @@ color: #ffffff;
     letter-spacing: 0.04em;
 color: #fff;
 cursor: pointer;
-font-family: "Roboto", sans-serif
+font-family: "Roboto", sans-serif;
+background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 
 }
 
@@ -210,6 +212,17 @@ font-family: "Roboto", sans-serif
 }
 .info-item {
     width: calc((100% - 24px * 3)/4);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.info-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+margin-bottom: 8px;
 }
 .info-title {
 margin-bottom: 8px;
@@ -233,6 +246,7 @@ color: #434455
 .page-item-fon {
     width: calc((100% - 24px * 3)/4);
      border-radius: 0px 0px 4px 4px;
+     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .team-list {
     display: flex;
@@ -247,15 +261,17 @@ color: #434455
     margin-top: 16px;
 
 }
-.socials-item {
+.socials-link {
     width: 100%;
     height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
-.socials-link {
+.socials-item {
     margin-top: 8px;
     display: flex;
     align-items: center;
-justify-content: center;
+ justify-content: center;
 width: 40%;
 height: 40%;
 gap: 24px;
@@ -264,9 +280,9 @@ border-radius: 50%;
 transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-link:hover,
-.contacts-link:focus {
-    background-color: #404BBF;
+.socials-link:focus {
     border-radius: 50%;
+    background-color: #404bbf;
 }
 .team {
     padding: 32px 0 32px;
@@ -332,6 +348,10 @@ text-align: center;
 }
 .portfolio-team:hover .overley {
     transform: translateY(0);
+}
+.portfolio-team:hover,
+.portfolio-team:focus {
+    box-shadow: 0px 1px 1px rgba(46, 47, 66, 0.16);
 }
 .page-portfolio {
     padding-top: 120px;
@@ -415,7 +435,18 @@ text-decoration: none;
     margin-right: 120px;
     margin:auto;
 }
+.footer-info {
+    margin-right: 120px;
+}
 /* Social media */
+.footer-media {
+    display: flex;
+align-items:baseline;
+margin-right: 120px;
+}
+.footer-item {
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .footer-media-title { 
     font-weight: 500;
     font-size: 16px;
