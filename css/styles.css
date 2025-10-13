@@ -172,6 +172,7 @@ color: #ffffff;
 color: #fff;
 cursor: pointer;
 font-family: "Roboto", sans-serif
+
 }
 
 .hero-button:hover,
@@ -436,7 +437,8 @@ text-decoration: none;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+    transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .socials-icon{
     fill:#f4f4fd
@@ -445,4 +447,5 @@ text-decoration: none;
 .socials-footer:hover,
 .socials-footer:focus {
     background-color: #31d0aa;
+
 }
