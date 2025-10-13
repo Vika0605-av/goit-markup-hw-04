@@ -174,7 +174,7 @@ color: #ffffff;
 color: #fff;
 cursor: pointer;
 font-family: "Roboto", sans-serif;
-background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 
 }
 
@@ -246,7 +246,7 @@ color: #434455
 .page-item-fon {
     width: calc((100% - 24px * 3)/4);
      border-radius: 0px 0px 4px 4px;
-     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-list {
     display: flex;
@@ -264,6 +264,10 @@ color: #434455
 .socials-link {
     width: 100%;
     height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
@@ -271,12 +275,12 @@ color: #434455
     margin-top: 8px;
     display: flex;
     align-items: center;
- justify-content: center;
-width: 40%;
-height: 40%;
-gap: 24px;
-background-color:#4D5AE5;
-border-radius: 50%;
+    justify-content: center;
+     width: 40%;
+     height: 40%;
+     gap: 24px;
+     background-color:#4D5AE5;
+     border-radius: 50%;
 transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-link:hover,
@@ -335,7 +339,7 @@ text-align: center;
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateX(100%);
+    transform: translateY(100%);
     width: 100%;
     height: 100%;
     padding: 40px 32px;
@@ -351,7 +355,8 @@ text-align: center;
 }
 .portfolio-team:hover,
 .portfolio-team:focus {
-    box-shadow: 0px 1px 1px rgba(46, 47, 66, 0.16);
+    box-shadow: 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08), px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .page-portfolio {
     padding-top: 120px;
@@ -434,6 +439,7 @@ text-decoration: none;
     align-items: flex-start;
     margin-right: 120px;
     margin:auto;
+    align-items: baseline;
 }
 .footer-info {
     margin-right: 120px;
@@ -454,6 +460,7 @@ margin-right: 120px;
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-socials {
     list-style: none;
