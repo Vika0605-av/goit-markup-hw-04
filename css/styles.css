@@ -260,6 +260,7 @@ color: #434455
     gap: 24px;
     padding: 0 16px;
     justify-content: center;
+    margin-top: 8px;
 }
 
 .socials-item {
@@ -426,7 +427,6 @@ text-decoration: none;
 }
 .footer-text {
     max-width: 265px;
-    margin-bottom: 16px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
